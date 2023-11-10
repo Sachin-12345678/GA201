@@ -1,0 +1,29 @@
+.weather-dashboard {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .weather-info {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .weather-location h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .weather-details p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Add more CSS styles to customize your dashboard's appearance */
+  

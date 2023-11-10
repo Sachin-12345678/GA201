@@ -1,0 +1,19 @@
+<!-- weather-dashboard.component.html -->
+
+<div class="weather-dashboard">
+    <h1>Weather Dashboard</h1>
+    <div *ngIf="weatherData">
+      <h2>{{ weatherData.name }}, {{ weatherData.sys.country }}</h2>
+      <div class="weather-details">
+        <p>Temperature: {{ (weatherData.main.temp - 273.15).toFixed(2) }}°C</p>
+        <p>Humidity: {{ weatherData.main.humidity }}%</p>
+        <p>Conditions: {{ weatherData.weather[0].description }}</p>
+      </div>
+    </div>
+    <div *ngIf="!weatherData">
+      <p>Loading weather data...</p>
+      <p>Data: {{ weatherData | json }}</p>
+
+    </div>
+  </div>
+  
