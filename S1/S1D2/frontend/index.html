@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.PImzt1FWyESqWVuNvIPdjAAAAA?w=150&h=180&c=7&r=0&o=5&pid=1.7" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Code Converter | OpenAI</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mainContent">Code Conversion Generator</h1>
+        <div class="form-group">
+          <label for="code" style="font-size: 15px; font-weight: bold;">Code:-</label>
+          <textarea id="code" rows="12" cols="40" placeholder="Write Code Here"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="language" style="font-size: 15px; font-weight: bold;">Language:-</label>
+          <input type="text" id="language" placeholder="Write Language Here">
+        </div>
+        <div class="form-group">
+          <button id="convert-btn">Convert</button>
+          <button id="debug-btn">Debug</button>
+          <button id="quality-btn">Check Quality</button>
+        </div>
+        <div class="output">
+          <h2>Output:</h2>
+          <div id="output"></div>
+          <div id="loader" class="loader"></div>
+        </div>
+      </div>    
+    <script src="./javascript/index.js"></script>
+</body>
+</html>
