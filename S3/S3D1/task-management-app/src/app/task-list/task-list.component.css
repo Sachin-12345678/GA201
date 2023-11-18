@@ -1,0 +1,15 @@
+button{
+    margin: auto;
+    display: block;
+}
+
+p{
+    text-align: center;
+}
+
+#cont{
+    height: auto;
+    width: 130px;
+    background-color: rgb(209, 103, 103);
+    margin: auto;
+}

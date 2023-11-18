@@ -1,0 +1,9 @@
+<!-- task-list.component.html -->
+<div id="cont">
+    <div *ngFor="let task of tasks">
+      <p>{{ task.title }} - {{ task.completed ? 'Completed' : 'Not Completed' }}</p>
+      <button (click)="deleteTask(task.id)">Delete</button>
+    </div>
+  </div>
+  
+  

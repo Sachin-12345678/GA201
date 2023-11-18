@@ -1,0 +1,11 @@
+  <!-- task-add.component.html -->
+  <div id="container">
+    <form (submit)="addTask()">
+      <label style="margin-top: 12px;">Title: <input [(ngModel)]="newTask.title" /></label><br>
+      <label>Description: <input [(ngModel)]="newTask.description" /></label><br>
+      <label>Completed: <input type="checkbox" [(ngModel)]="newTask.completed" /></label><br>
+      <button type="submit">Add Task</button>
+    </form>
+  </div>
+  
+  
