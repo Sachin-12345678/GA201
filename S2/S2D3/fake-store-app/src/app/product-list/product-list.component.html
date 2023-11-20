@@ -1,0 +1,18 @@
+<div *ngIf="products.length === 0; else productsList">
+    <p>Loading...</p>
+  </div>
+  
+  <ng-template #productsList>
+    <div class="product-card-container">
+      <div *ngFor="let product of products" class="product-card" (click)="onCardClick(product)">
+        <img [src]="product.image" alt="{{ product.title }}">
+        <div class="product-details">
+          <h3>{{ product.title }}</h3>
+          <p>{{ product.description }}</p>
+          <p>Price: ${{ product.price }}</p>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+  
+  

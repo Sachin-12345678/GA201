@@ -1,0 +1,18 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#nav{
+    height: 70px;
+    width: auto;
+    border: 1px solid darkred;
+    background-color: darkred;
+} 
+
+#nav>h1{
+    margin-left: 20px;
+    color: white;
+    display: block;
+    margin-top: 16px;
+}
