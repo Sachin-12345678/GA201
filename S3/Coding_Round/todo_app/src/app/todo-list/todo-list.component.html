@@ -1,0 +1,13 @@
+<p>todo-list works!</p>
+
+<div>
+    <input [(ngModel)]="newTodo" placeholder="Add new Todo" />
+    <button (click)="addTodo()">Add</button>
+</div>
+
+<ul>
+    <li *ngfor="todo of todoes; let i=index">
+        {{todos}}
+        <button (click)="removeTodo(i)">Delete</button>
+    </li>
+</ul>
